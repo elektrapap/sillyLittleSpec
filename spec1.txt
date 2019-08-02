@@ -1,0 +1,107 @@
+# Objekttypen (object types):
+
+Immobilie_summary
+{
+		id:number
+		"location":"string",
+		"Anzahl Zimmer": number,
+		"Fläche in qm": number
+		"Fläche Grundstück in qm": number,
+		"Preis in Währung": number
+	}
+
+Immobilie_complete
+{
+		id:number
+		"location":"string",
+		"Anzahl Zimmer": number,
+		"Fläche in qm": number
+		"Fläche Grundstück in qm": number,
+		"Preis in Währung": number
+	}
+
+
+"Kontaktanfrage": {
+	id:number
+	"Nachname": string,
+	"Vorname": string,
+	"Emailadresse": string,
+	"telefonnummer": number
+}
+
+
+
+# Methoden (methods/paths):
+### Überblick
+
+Immobilien:
+-rufe Liste von Immobilien einer Region ab
+-suche Immobilien einer Region nach Kriterium des Nutzers (Parameter)
+-rufe Detailansicht zu einer Immobilie ab
+
+
+Kontaktformular:
+-übertrage Daten von Nutzer aus Kontaktformular ins Backend (siehe unten)
+
+
+### Spezifikation
+
+	Methode: rufe Liste von Immobilien einer Region ab
+	Pfad: immobilie/liste-region/<region>
+	http Methode: GET
+	Parameter: 
+		Notwendig: Region:string
+	Response:
+		Json body: results=[Immobilie] ((Ein Array von Objekten des Typs Immobilie mit dem Namen results in json notation im Körper der http response))
+
+
+	Methode: suche Immobilien einer Region nach Kriterium des Nutzers
+	Pfad: immobilie/liste-region/<auswahlkriterium>
+	http Methode:
+	Parameter:
+		Notwendig: auswahlkriterium
+		Optional: REGION=<Region, Region, ...>
+	Response:
+		Json body: results=[Immobilie]
+		(Ein Array von Objekten des Typs Immobilie mit dem Namen results in json notation im Körper der http response)
+
+
+	Methode: rufe Detailansicht zu einer Immobilie ab
+	Pfad: immobilie/immobilien-detailiert/<id>
+	http Methode
+	Parameter:
+		Notwendig: immobilienId
+	Response:
+		Json body: results=[Immobilie]
+		(Ein Array von Objekten des Typs Immobilie mit dem Namen results in json notation im Körper der http response)
+
+
+	Methode: übertrage Daten von Nutzer aus Kontaktformular ins Backend 
+	Pfad: kontaktformular/uebertrage-kontaktanfrage/<kontaktanfrage>
+	http Methode: PUT
+	Parameter:
+		Notwendig: Kontaktanfrage:kontaktanfrage 
+		Optional: letzte-betrachtete-immobilie:immobilie::id	((schreib eine gültige immobilien-id))
+	Response: empty
+
+*********
+
+-------------xxxxxxxxxxxxx------------xxxxxxxxxxxxxxx---------------
+URIs:
+-http://(zahl)/Startseite
+-http://(zahl)/Startseite/Liste-Objekte
+-http://(zahl)/Startseite/Sortierte-Objekte
+-http://(zahl)/Startseite-Objekte-Kontaktformular
+
+URIs
+
+/start
+/1/list
+
+/1/list/id=12345
+/1/contactform
+
+
+
+
+
