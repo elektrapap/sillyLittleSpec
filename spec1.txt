@@ -57,7 +57,7 @@ Kontaktformular:
 
 	Methode: suche Immobilien einer Region nach Kriterium des Nutzers
 	Pfad: immobilie/liste-region/<auswahlkriterium>
-	http Methode:
+	http Methode: GET
 	Parameter:
 		Notwendig: auswahlkriterium
 		Optional: REGION=<Region, Region, ...>
@@ -68,7 +68,7 @@ Kontaktformular:
 
 	Methode: rufe Detailansicht zu einer Immobilie ab
 	Pfad: immobilie/immobilien-detailiert/<id>
-	http Methode
+	http Methode: GET
 	Parameter:
 		Notwendig: immobilienId
 	Response:
