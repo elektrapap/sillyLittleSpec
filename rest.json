@@ -1,0 +1,34 @@
+{
+	"property": {
+		"propertyShort"
+		{
+			"id": "number",
+			"location": "string",
+			"rooms":"number",
+			"size":"string",
+			"price":"string"
+		},
+		"propertyExtended"
+		{
+			"plot":"string"
+		}
+	}
+
+	"contact"{
+			"id":"number",
+			"lastName":"string",
+			"firstName":"string",
+			"Email":"string",
+			"phone":"number"
+	}
+
+	{
+		
+		}
+
+}
+
+HTTP GET http://www.immobilie/liste-region/<region>
+HTTP GET http://www.immobilie/liste-region/<auswahlkriterium>
+HTTP GET http://www.immobilie/immobilien-detailiert/<id>
+HTTP PUT http://www.kontaktformular/uebertrage-kontaktanfrage/<kontaktanfrage>
