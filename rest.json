@@ -14,7 +14,13 @@
 			},
 			"propertyExtended":
 			{
-				"plot":"120qm"
+				"id": "1",
+				"name":"cuteOldHouse",
+				"location": "Chania, Crete",
+				"rooms":"4",
+				"size":"80qm",
+				"plot":"120qm",
+				"price":"50.000€" 	
 			}
 		},
 	{
