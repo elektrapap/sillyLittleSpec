@@ -1,6 +1,6 @@
 # Objekttypen (object types):
 
-Immobilie_summary
+propertyShort
 {
 		id:number,
 		"name":"string",
@@ -10,13 +10,13 @@ Immobilie_summary
 		"price": number
 	}
 
-Immobilie_complete
+propertyExtended
 {	
 		"plotSize": "string",
 	}
 
 
-"Kontaktanfrage": {
+"contacts": {
 	id:number
 	"name":"string"
 	"lastName": string,
