@@ -1,10 +1,12 @@
 {
 	"places":
 	[
-		"cuteOldHouse" {
+		
+		{
 			"propertyShort":
 			{
 				"id": "1",
+				"name":"cuteOldHouse",
 				"location": "Chania, Crete",
 				"rooms":"4",
 				"size":"80qm",
@@ -15,33 +17,36 @@
 				"plot":"120qm"
 			}
 		},
-		"reasonablyNiceFlat" {
+	{
 			"propertyShort":
 			{
 				"id": "2",
+				"name":"niceFlat",
 				"location": "Chania, Crete",
 				"rooms":"2",
 				"size":"55qm",
-				"price":"50.000€" 
+				"price":"50,000€" 
 			}
 		}
-	]
-	"contacts"
+	],
+	"contacts":
 	[
-		"IJ" {
+		{
 			"id":"2",
-			"lastName":"Irgend",
-			"firstName":"Jemand",
+			"name":"IJ",
+			"lastName":"Jemand",
+			"firstName":"Irgend",
 			"Email":"IJ@gmail.com",
-			"phone":"123-456789"
-			}
-			"NsE" {
-					"id":"3",
-					"lastName":"Nochso",
-					"firstName":"Einer",
-					"Email":"NsE@gmail.com",
-					"phone":"123-987654"
-					}
+			"phone":"123456789"
+		},
+		{
+			"id":"3",
+			"name":"NoSo",
+			"lastName":"Einer",
+			"firstName":"Nochso",
+			"Email":"NsE@gmail.com",
+			"phone":"123987654"
+		}
 	]
 	
 }
