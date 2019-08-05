@@ -1,34 +1,48 @@
 {
-	"property": {
-		"propertyShort"
-		{
-			"id": "number",
-			"location": "string",
-			"rooms":"number",
-			"size":"string",
-			"price":"string"
+	"places":
+	[
+		"cuteOldHouse" {
+			"propertyShort":
+			{
+				"id": "1",
+				"location": "Chania, Crete",
+				"rooms":"4",
+				"size":"80qm",
+				"price":"50.000€" 
+			},
+			"propertyExtended":
+			{
+				"plot":"120qm"
+			}
 		},
-		"propertyExtended"
-		{
-			"plot":"string"
+		"reasonablyNiceFlat" {
+			"propertyShort":
+			{
+				"id": "2",
+				"location": "Chania, Crete",
+				"rooms":"2",
+				"size":"55qm",
+				"price":"50.000€" 
+			}
 		}
-	}
-
-	"contact"{
-			"id":"number",
-			"lastName":"string",
-			"firstName":"string",
-			"Email":"string",
-			"phone":"number"
-	}
-
-	{
-		
-		}
-
+	]
+	"contacts"
+	[
+		"IJ" {
+			"id":"2",
+			"lastName":"Irgend",
+			"firstName":"Jemand",
+			"Email":"IJ@gmail.com",
+			"phone":"123-456789"
+			}
+			"NsE" {
+					"id":"3",
+					"lastName":"Nochso",
+					"firstName":"Einer",
+					"Email":"NsE@gmail.com",
+					"phone":"123-987654"
+					}
+	]
+	
 }
 
-HTTP GET http://www.immobilie/liste-region/<region>
-HTTP GET http://www.immobilie/liste-region/<auswahlkriterium>
-HTTP GET http://www.immobilie/immobilien-detailiert/<id>
-HTTP PUT http://www.kontaktformular/uebertrage-kontaktanfrage/<kontaktanfrage>
