@@ -2,31 +2,27 @@
 
 Immobilie_summary
 {
-		id:number
+		id:number,
+		"name":"string",
 		"location":"string",
-		"Anzahl Zimmer": number,
-		"Fläche in qm": number
-		"Fläche Grundstück in qm": number,
-		"Preis in Währung": number
+		"numberRooms": number,
+		"size": number,
+		"price": number
 	}
 
 Immobilie_complete
-{
-		id:number
-		"location":"string",
-		"Anzahl Zimmer": number,
-		"Fläche in qm": number
-		"Fläche Grundstück in qm": number,
-		"Preis in Währung": number
+{	
+		"plotSize": "string",
 	}
 
 
 "Kontaktanfrage": {
 	id:number
-	"Nachname": string,
-	"Vorname": string,
-	"Emailadresse": string,
-	"telefonnummer": number
+	"name":"string"
+	"lastName": string,
+	"firstName": string,
+	"Email": string,
+	"phone": number
 }
 
 
