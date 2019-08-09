@@ -12,7 +12,14 @@ propertyShort
 
 propertyExtended
 {	
+		id:number,
+		"name":"string",
+		"location":"string",
+		"numberRooms": number,
+		"size": number,
 		"plotSize": "string",
+		"price": number
+		
 	}
 
 
