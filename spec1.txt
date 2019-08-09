@@ -2,34 +2,34 @@
 
 propertyShort
 {
-		id:number,
-		"name":"string",
-		"location":"string",
-		"numberRooms": number,
-		"size": number,
-		"price": number
-	}
+	id:number,
+	"name":"string",
+	"location":"string",
+	"numberRooms": number,
+	"size": "string",
+	"price": "string"
+}
 
 propertyExtended
 {	
-		id:number,
-		"name":"string",
-		"location":"string",
-		"numberRooms": number,
-		"size": number,
-		"plotSize": "string",
-		"price": number
-		
-	}
+	id:number,
+	"name":"string",
+	"location":"string",
+	"numberRooms": number,
+	"size": "string",
+	"plotSize": "string",
+	"price": "string"
+	
+}
 
 
 "contacts": {
 	id:number
 	"name":"string"
-	"lastName": string,
-	"firstName": string,
-	"Email": string,
-	"phone": number
+	"lastName": "string",
+	"firstName": "string",
+	"Email": "string",
+	"phone": "string"
 }
 
 
@@ -37,13 +37,15 @@ propertyExtended
 # Methoden (methods/paths):
 ### Überblick
 
-Immobilien:
+properties:
 -rufe Liste von Immobilien einer Region ab
--suche Immobilien einer Region nach Kriterium des Nutzers (Parameter)
+-suche Immobilien einer Region nach Kriterium des Nutzers (Parameter) 
+http://localhost:3000/places
+
 -rufe Detailansicht zu einer Immobilie ab
+http://localhost:3000/placesExtended
 
-
-Kontaktformular:
+contacts:
 -übertrage Daten von Nutzer aus Kontaktformular ins Backend (siehe unten)
 
 
