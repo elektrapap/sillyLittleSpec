@@ -43,15 +43,15 @@
 			"lastName":"Jemand",
 			"firstName":"Irgend",
 			"Email":"IJ@gmail.com",
-			"phone":"123456789"
+			"phone":123456789
 		},
 		{
 			"id":"3",
 			"name":"NoSo",
 			"lastName":"Einer",
 			"firstName":"Nochso",
-			"Email":"NsE@gmail.com",
-			"phone":"123987654"
+			"Email":"NoSo@gmail.com",
+			"phone":123987654
 		}
 	]
 	
